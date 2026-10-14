@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: riya-singh-portfolio
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: ./
