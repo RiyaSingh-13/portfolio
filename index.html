@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riya Singh | Full Stack Developer & AI System Architect</title>
+  <meta name="description" content="Portfolio of Riya Singh - Full Stack Developer specializing in React.js, Next.js, Node.js, WebSockets, AI Code Auditing & Scalable Distributed Systems.">
+  <meta name="keywords" content="Riya Singh, Full Stack Developer, React Developer, Node.js, Next.js, Sentinel AI, ChatNova, Pick and Give, Software Engineer Portfolio">
+  <meta name="author" content="Riya Singh">
+  <meta name="theme-color" content="#070913">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Riya Singh | Full Stack Developer & AI System Architect">
+  <meta property="og:description" content="Portfolio of Riya Singh - Explore flagship projects including Sentinel AI, Pick&Give MERN platform, and ChatNova real-time messaging.">
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  <!-- Ambient Particle Constellation Background Canvas -->
+  <canvas id="ambient-canvas"></canvas>
+
+  <!-- Custom Cursor Followers (Desktop) -->
+  <div class="custom-cursor-dot" aria-hidden="true"></div>
+  <div class="custom-cursor-ring" aria-hidden="true"></div>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- Top Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-brand" aria-label="Riya Singh Home">
+        <div class="brand-symbol">&lt;RS/&gt;</div>
+        <span>Riya<span class="gradient-text">.dev</span></span>
+        <div class="brand-status" title="Open to Full-Stack & Engineering Roles">
+          <span class="pulse-dot"></span>
+          <span>Available</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#terminal" class="nav-link">CLI Terminal</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Utilities -->
+      <div class="nav-actions">
+        <!-- Sound FX Toggle -->
+        <button id="sound-toggle-btn" class="icon-btn" aria-label="Toggle Sound Effects" title="Toggle Sound FX">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M11 5L6 9H2v6h4l5 4V5z"></path>
+            <line x1="23" y1="9" x2="17" y2="15"></line>
+            <line x1="17" y1="9" x2="23" y2="15"></line>
+          </svg>
+        </button>
+
+        <!-- Theme Mode Switcher -->
+        <button id="theme-toggle-btn" class="icon-btn" aria-label="Toggle Visual Theme" title="Switch Theme (Cyber / OLED / Gold)">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <!-- CTA Button -->
+        <a href="#contact" class="btn-primary" style="padding: 0.55rem 1.25rem; font-size: 0.88rem;">
+          Hire Me
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="hamburger-btn" aria-label="Open Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =================================================================
+         1. HERO SECTION
+         ================================================================= -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content reveal-on-scroll">
+          <div class="hero-badge">
+            <span class="sparkle">✦</span>
+            <span>FULL STACK DEVELOPER &amp; AI SYSTEMS ARCHITECT</span>
+          </div>
+
+          <h1 class="hero-title">
+            Engineering High-Performance <span class="gradient-text">Web Applications</span> &amp; AI Security.
+          </h1>
+
+          <p class="hero-subtitle">
+            Hi, I'm <strong>Riya Singh</strong> — Computer Science engineer at <strong>Lovely Professional University</strong>. I architect resilient distributed systems, real-time WebSocket communication platforms, and automated AI security code auditors.
+          </p>
+
+          <!-- Metrics Highlights Cluster -->
+          <div class="hero-stats-pills">
+            <div class="stat-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+              <span>500+ LeetCode DSA Solved</span>
+            </div>
+            <div class="stat-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+              </svg>
+              <span>Top 30 / 2,000+ CodeXtreme</span>
+            </div>
+            <div class="stat-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+              <span>Full Stack Dev @ Syncgaze</span>
+            </div>
+          </div>
+
+          <!-- CTAs -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn-primary">
+              <span>Explore Projects</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+
+            <button onclick="launchTerminal()" class="btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="4 17 10 11 4 5"></polyline>
+                <line x1="12" y1="19" x2="20" y2="19"></line>
+              </svg>
+              <span>Launch Terminal CLI</span>
+            </button>
+
+            <a href="#contact" class="btn-secondary" style="border-style: dashed;">
+              <span>Get In Touch</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Visual (Interactive 3D Avatar Card) -->
+        <div class="hero-visual reveal-on-scroll delay-2">
+          <div class="avatar-wrapper">
+            <div class="avatar-backdrop"></div>
+            
+            <div class="avatar-card">
+              <div class="avatar-inner">
+                <img src="assets/images/riya.jpg" alt="Riya Singh - Software Engineer" class="avatar-img" width="380" height="380">
+                <div class="avatar-overlay">
+                  <span class="avatar-tag">Software Engineer</span>
+                  <h2 class="avatar-name">Riya Singh</h2>
+                </div>
+              </div>
+            </div>
+
+            <!-- Orbiting Tech Stack Badges -->
+            <div class="floating-badge badge-1">
+              <span style="color: #61dafb; font-weight: bold;">⚛</span>
+              <span>React &amp; Next.js</span>
+            </div>
+            <div class="floating-badge badge-2">
+              <span style="color: #68a063; font-weight: bold;">⬢</span>
+              <span>Node &amp; Express</span>
+            </div>
+            <div class="floating-badge badge-3">
+              <span style="color: #a855f7; font-weight: bold;">🤖</span>
+              <span>Gemini AI &amp; WebSockets</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ticker Strip -->
+      <div class="tech-ticker" aria-hidden="true">
+        <div class="ticker-track">
+          <div class="ticker-item"><span class="dot"></span> C++ &amp; Java</div>
+          <div class="ticker-item"><span class="dot"></span> TypeScript &amp; ES6+</div>
+          <div class="ticker-item"><span class="dot"></span> React.js &amp; Next.js</div>
+          <div class="ticker-item"><span class="dot"></span> Node.js &amp; Express</div>
+          <div class="ticker-item"><span class="dot"></span> Socket.io WebSockets</div>
+          <div class="ticker-item"><span class="dot"></span> MongoDB &amp; Mongoose</div>
+          <div class="ticker-item"><span class="dot"></span> Prisma ORM &amp; SQL</div>
+          <div class="ticker-item"><span class="dot"></span> Gemini AI &amp; Playwright</div>
+          <div class="ticker-item"><span class="dot"></span> 500+ LeetCode DSA</div>
+          <div class="ticker-item"><span class="dot"></span> Top 30 CodeXtreme</div>
+          <!-- Repeated for seamless loop -->
+          <div class="ticker-item"><span class="dot"></span> C++ &amp; Java</div>
+          <div class="ticker-item"><span class="dot"></span> TypeScript &amp; ES6+</div>
+          <div class="ticker-item"><span class="dot"></span> React.js &amp; Next.js</div>
+          <div class="ticker-item"><span class="dot"></span> Node.js &amp; Express</div>
+          <div class="ticker-item"><span class="dot"></span> Socket.io WebSockets</div>
+          <div class="ticker-item"><span class="dot"></span> MongoDB &amp; Mongoose</div>
+          <div class="ticker-item"><span class="dot"></span> Prisma ORM &amp; SQL</div>
+          <div class="ticker-item"><span class="dot"></span> Gemini AI &amp; Playwright</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         2. INTERACTIVE DEVELOPER TERMINAL SECTION
+         ================================================================= -->
+    <section id="terminal">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-tag">Interactive Environment</div>
+          <h2 class="section-title">Developer <span class="gradient-text">Console CLI</span></h2>
+          <p class="section-subtitle">
+            Prefer keyboard shortcuts? Query my background, tech stack, and achievements directly from this cyber shell.
+          </p>
+        </div>
+
+        <div class="terminal-wrapper reveal-on-scroll delay-1">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="terminal-dot dot-red"></span>
+              <span class="terminal-dot dot-yellow"></span>
+              <span class="terminal-dot dot-green"></span>
+            </div>
+            <div class="terminal-title">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="4 17 10 11 4 5"></polyline>
+                <line x1="12" y1="19" x2="20" y2="19"></line>
+              </svg>
+              <span>riya@mesh:~ (zsh)</span>
+            </div>
+            <div class="terminal-actions-bar">
+              <button id="term-help-btn" class="term-quick-btn">Help</button>
+              <button id="term-clear-btn" class="term-quick-btn">Clear</button>
+            </div>
+          </div>
+
+          <div class="terminal-body">
+            <div id="terminal-output" class="terminal-output"></div>
+            <div class="terminal-input-row">
+              <span class="prompt-prefix">riya@mesh</span>:<span class="prompt-path">~</span><span class="prompt-symbol">$</span>
+              <input type="text" id="terminal-input" class="terminal-input" autocomplete="off" spellcheck="false" placeholder="Type a command (e.g. 'help', 'skills', 'projects', 'sudo hire')...">
+            </div>
+          </div>
+
+          <!-- Quick Suggestion Chips -->
+          <div class="terminal-suggestions">
+            <span class="suggestions-label">Suggestions:</span>
+            <button class="suggestion-chip" data-cmd="whoami">whoami</button>
+            <button class="suggestion-chip" data-cmd="skills">skills</button>
+            <button class="suggestion-chip" data-cmd="projects">projects</button>
+            <button class="suggestion-chip" data-cmd="experience">experience</button>
+            <button class="suggestion-chip" data-cmd="achievements">achievements</button>
+            <button class="suggestion-chip" data-cmd="cat cv.txt">cat cv.txt</button>
+            <button class="suggestion-chip" data-cmd="sudo hire">sudo hire</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         3. EXPERIENCE SECTION
+         ================================================================= -->
+    <section id="experience">
+      <div class="container experience-container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-tag">Industry Experience</div>
+          <h2 class="section-title">Production <span class="gradient-text">Engineering</span></h2>
+          <p class="section-subtitle">
+            Proven track record of architecting full-stack client platforms, designing RESTful APIs, and resolving critical production bottlenecks.
+          </p>
+        </div>
+
+        <div class="exp-card reveal-on-scroll delay-1">
+          <div class="exp-header">
+            <div>
+              <h3 class="exp-company">Syncgaze Pvt. Ltd.</h3>
+              <div class="exp-role-badge">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+                <span>Full Stack Developer</span>
+              </div>
+            </div>
+            <div class="exp-meta">
+              <span class="exp-period">Oct 2025 – May 2026</span>
+              <span class="exp-location">Remote • Production Software</span>
+            </div>
+          </div>
+
+          <!-- Key Metrics -->
+          <div class="exp-metric-grid">
+            <div class="metric-box">
+              <div class="metric-value">10+ Modules</div>
+              <div class="metric-label">Architected REST APIs, role-based access, and MongoDB query optimizations reducing response latency.</div>
+            </div>
+            <div class="metric-box">
+              <div class="metric-value">3 Roles</div>
+              <div class="metric-label">Engineered School Management Website with 3 role-based interfaces presented directly to clients.</div>
+            </div>
+            <div class="metric-box">
+              <div class="metric-value">20+ Issues</div>
+              <div class="metric-label">Resolved critical production bugs including race conditions in slot allocation &amp; API response failures.</div>
+            </div>
+          </div>
+
+          <!-- Bullet Points from CV -->
+          <ul class="exp-bullet-list">
+            <li class="exp-bullet">
+              <span class="bullet-icon">▸</span>
+              <span>Delivered full-stack features for 2 client platforms using React.js, Node.js, and Express.js; architected 10+ modules with REST APIs, role-based access, and MongoDB query optimizations that reduced response latency.</span>
+            </li>
+            <li class="exp-bullet">
+              <span class="bullet-icon">▸</span>
+              <span>Built a demo React-based School Management Website with 3 role-based interfaces to showcase capabilities to clients, communicating requirements and progress with stakeholders while coordinating with a 5-member cross-functional team using Git-based workflows to meet sprint deadlines.</span>
+            </li>
+            <li class="exp-bullet">
+              <span class="bullet-icon">▸</span>
+              <span>Debugged and resolved 20+ production issues, including race conditions in booking slot allocation and API response failures, improving application stability post-deployment.</span>
+            </li>
+          </ul>
+
+          <div class="exp-tech-tags">
+            <span class="tech-tag">React.js</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Express.js</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">REST APIs</span>
+            <span class="tech-tag">Role-Based Access</span>
+            <span class="tech-tag">Git Workflows</span>
+            <span class="tech-tag">Concurrency Debugging</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         4. FEATURED PROJECTS SECTION
+         ================================================================= -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-tag">Featured Portfolio</div>
+          <h2 class="section-title">Flagship <span class="gradient-text">Architectures</span></h2>
+          <p class="section-subtitle">
+            Autonomous AI auditors, community volunteer platforms, and high-frequency real-time messaging engines.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="project-filters reveal-on-scroll delay-1">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="ai">AI &amp; Security</button>
+          <button class="filter-btn" data-filter="mern">MERN / Full-Stack</button>
+          <button class="filter-btn" data-filter="realtime">Real-Time &amp; Sockets</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          
+          <!-- Project 1: Sentinel -->
+          <article class="project-card reveal-on-scroll delay-1" data-category="ai mern">
+            <div class="project-media">
+              <img src="assets/images/sentinel.jpg" alt="Sentinel AI Code Auditor UI" class="project-img" loading="lazy">
+              <div class="project-media-overlay">
+                <span class="project-badge">AI-Powered Security &amp; Code Auditor</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-title">
+                <span>Sentinel</span>
+                <span class="project-date">Sep 2026</span>
+              </div>
+              <p class="project-desc">
+                An intelligent security engine analyzing live applications &amp; GitHub repos using Playwright, Git commit history, and automated Gemini AI test specifications with Root Cause Analysis.
+              </p>
+              
+              <ul class="project-highlights">
+                <li class="project-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Dual context: Playwright runtime DOM + Git source &amp; commit history.</span>
+                </li>
+                <li class="project-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Node.js WebSocket agent with 4 security layers &amp; 3-horizon risk analyzer.</span>
+                </li>
+              </ul>
+
+              <div class="project-tech">
+                <span class="tech-tag">React.js</span>
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">Gemini AI</span>
+                <span class="tech-tag">Playwright</span>
+                <span class="tech-tag">WebSocket</span>
+                <span class="tech-tag">Prisma</span>
+                <span class="tech-tag">Groq</span>
+              </div>
+
+              <div class="project-footer">
+                <div class="project-links">
+                  <a href="https://github.com/RiyaSingh-13" target="_blank" class="proj-link">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    <span>GitHub</span>
+                  </a>
+                </div>
+                <button onclick="openProjectModal('sentinel')" class="btn-inspect">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                  <span>Deep Dive</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Pick&Give -->
+          <article class="project-card reveal-on-scroll delay-2" data-category="mern">
+            <div class="project-media">
+              <img src="assets/images/pickgive.jpg" alt="Pick&Give NGO Platform UI" class="project-img" loading="lazy">
+              <div class="project-media-overlay">
+                <span class="project-badge">NGO Donation &amp; Volunteer Platform</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-title">
+                <span>Pick&amp;Give</span>
+                <span class="project-date">Jun 2026</span>
+              </div>
+              <p class="project-desc">
+                Full-stack MERN community platform connecting donors, NGOs, and volunteers with Leaflet.js live route visualization, Nodemailer OTP verification, and role-guarded governance.
+              </p>
+
+              <ul class="project-highlights">
+                <li class="project-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>100% secure donation handover via transactional OTP email verification.</span>
+                </li>
+                <li class="project-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Normalized Mongoose schemas &amp; Leaflet live volunteer route mapping.</span>
+                </li>
+              </ul>
+
+              <div class="project-tech">
+                <span class="tech-tag">React.js</span>
+                <span class="tech-tag">Tailwind CSS</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express.js</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Leaflet.js</span>
+                <span class="tech-tag">Nodemailer</span>
+              </div>
+
+              <div class="project-footer">
+                <div class="project-links">
+                  <a href="https://github.com/RiyaSingh-13" target="_blank" class="proj-link">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    <span>GitHub</span>
+                  </a>
+                </div>
+                <button onclick="openProjectModal('pickgive')" class="btn-inspect">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                  <span>Deep Dive</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: ChatNova -->
+          <article class="project-card reveal-on-scroll delay-3" data-category="realtime mern">
+            <div class="project-media">
+              <img src="assets/images/chatnova.jpg" alt="ChatNova Real Time Messaging UI" class="project-img" loading="lazy">
+              <div class="project-media-overlay">
+                <span class="project-badge">Full Stack Real-Time Chat System</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-title">
+                <span>ChatNova</span>
+                <span class="project-date">Oct 2025</span>
+              </div>
+              <p class="project-desc">
+                High-throughput instant messaging engine using Socket.io bi-directional sockets, eliminating repeated HTTP polling, featuring typing indicators, read receipts, and Cloudinary media delivery.
+              </p>
+
+              <ul class="project-highlights">
+                <li class="project-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>100% session security with stateless JWT auth on sockets &amp; REST APIs.</span>
+                </li>
+                <li class="project-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>3 live interaction signals: typing indicators, read receipts, and presence.</span>
+                </li>
+              </ul>
+
+              <div class="project-tech">
+                <span class="tech-tag">React.js</span>
+                <span class="tech-tag">Tailwind CSS</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express.js</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Socket.io</span>
+                <span class="tech-tag">Cloudinary</span>
+                <span class="tech-tag">JWT</span>
+              </div>
+
+              <div class="project-footer">
+                <div class="project-links">
+                  <a href="https://github.com/RiyaSingh-13" target="_blank" class="proj-link">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    <span>GitHub</span>
+                  </a>
+                </div>
+                <button onclick="openProjectModal('chatnova')" class="btn-inspect">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                  <span>Deep Dive</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         5. SKILLS MATRIX SECTION
+         ================================================================= -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-tag">Technical Proficiency</div>
+          <h2 class="section-title">Skills &amp; <span class="gradient-text">Arsenal</span></h2>
+          <p class="section-subtitle">
+            Comprehensive foundation spanning robust backend architecture, reactive user interfaces, and algorithmic problem solving.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- Category 1: Languages -->
+          <div class="skill-category-card reveal-on-scroll delay-1">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="category-title">Languages</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">C++ (DSA &amp; Competitive)</span><span class="skill-level-pct">92%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 92%;"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">JavaScript (ES6+)</span><span class="skill-level-pct">90%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">TypeScript</span><span class="skill-level-pct">85%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 85%;"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">Java</span><span class="skill-level-pct">80%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 80%;"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">HTML5 &amp; CSS3</span><span class="skill-level-pct">95%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 95%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Frontend -->
+          <div class="skill-category-card reveal-on-scroll delay-2">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <h3 class="category-title">Frontend Engineering</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">React.js &amp; Next.js</span><span class="skill-level-pct">92%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 92%;"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">Tailwind CSS &amp; Modern UI</span><span class="skill-level-pct">90%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">State Management &amp; Hooks</span><span class="skill-level-pct">88%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 88%;"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">Component-Based Architecture</span><span class="skill-level-pct">92%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 92%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Backend & APIs -->
+          <div class="skill-category-card reveal-on-scroll delay-3">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 17l6-6-6-6"></path>
+                  <path d="M12 19h8"></path>
+                </svg>
+              </div>
+              <h3 class="category-title">Backend &amp; Distributed</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">Node.js &amp; Express.js</span><span class="skill-level-pct">90%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">RESTful APIs &amp; CRUD Ops</span><span class="skill-level-pct">94%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 94%;"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">WebSocket &amp; Socket.io</span><span class="skill-level-pct">88%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 88%;"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">JWT &amp; Role-Based Security</span><span class="skill-level-pct">86%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 86%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Databases -->
+          <div class="skill-category-card reveal-on-scroll delay-1">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <h3 class="category-title">Database &amp; Storage</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">MongoDB &amp; Mongoose</span><span class="skill-level-pct">92%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 92%;"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">SQL &amp; Relational Schema Design</span><span class="skill-level-pct">82%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 82%;"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">Prisma ORM &amp; SQLite</span><span class="skill-level-pct">86%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 86%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 5: Core Computer Science -->
+          <div class="skill-category-card reveal-on-scroll delay-2">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </div>
+              <h3 class="category-title">Core Computer Science</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">Data Structures &amp; Algorithms</span><span class="skill-level-pct">94%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 94%;"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">Object-Oriented Programming (OOP)</span><span class="skill-level-pct">90%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">DBMS &amp; Transaction ACID</span><span class="skill-level-pct">86%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 86%;"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">Software Engineering Methodologies</span><span class="skill-level-pct">88%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 88%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 6: Tools & Cloud Platforms -->
+          <div class="skill-category-card reveal-on-scroll delay-3">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                </svg>
+              </div>
+              <h3 class="category-title">Tools &amp; Cloud</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">Git &amp; GitHub Version Control</span><span class="skill-level-pct">94%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 94%;"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">Playwright Automated Testing</span><span class="skill-level-pct">86%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 86%;"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">Vercel &amp; Render Cloud Deployment</span><span class="skill-level-pct">90%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">Cloudinary Media Pipeline</span><span class="skill-level-pct">88%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 88%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         6. ACHIEVEMENTS & LEETCODE ARENA
+         ================================================================= -->
+    <section id="achievements">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-tag">Competitions &amp; Credentials</div>
+          <h2 class="section-title">Achievements &amp; <span class="gradient-text">Arena</span></h2>
+          <p class="section-subtitle">
+            Demonstrated algorithmic rigor, competitive coding benchmarks, and recognized credentials.
+          </p>
+        </div>
+
+        <div class="achievements-grid">
+          
+          <!-- LeetCode Interactive Arena -->
+          <div class="arena-card reveal-on-scroll delay-1">
+            <div class="arena-badge-header">
+              <div class="badge-art-icon">
+                <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h3 class="arena-title">LeetCode 100 Days Badge</h3>
+                <p class="arena-subtitle">Continuous problem-solving streak across trees, graphs, and DP • Mar 2026</p>
+              </div>
+            </div>
+
+            <!-- Stats Ring & Bars -->
+            <div class="leetcode-stats-row">
+              <div class="progress-ring-container">
+                <svg class="progress-ring-svg">
+                  <defs>
+                    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#06b6d4" />
+                      <stop offset="50%" stop-color="#8b5cf6" />
+                      <stop offset="100%" stop-color="#ec4899" />
+                    </linearGradient>
+                  </defs>
+                  <circle class="progress-ring-circle-bg" cx="70" cy="70" r="55"></circle>
+                  <circle class="progress-ring-circle-fill" cx="70" cy="70" r="55"></circle>
+                </svg>
+                <div class="ring-center-text">
+                  <div id="leetcode-count-val" class="ring-number">500+</div>
+                  <div class="ring-label">Solved</div>
+                </div>
+              </div>
+
+              <!-- Difficulty Breakdown -->
+              <div class="difficulty-bars">
+                <div class="diff-row">
+                  <span class="diff-tag diff-easy">Easy</span>
+                  <div class="diff-bar-track">
+                    <div class="diff-bar-fill fill-easy"></div>
+                  </div>
+                  <span class="diff-count">180</span>
+                </div>
+                <div class="diff-row">
+                  <span class="diff-tag diff-med">Medium</span>
+                  <div class="diff-bar-track">
+                    <div class="diff-bar-fill fill-med"></div>
+                  </div>
+                  <span class="diff-count">240</span>
+                </div>
+                <div class="diff-row">
+                  <span class="diff-tag diff-hard">Hard</span>
+                  <div class="diff-bar-track">
+                    <div class="diff-bar-fill fill-hard"></div>
+                  </div>
+                  <span class="diff-count">85+</span>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top: 1.75rem; padding-top: 1.25rem; border-top: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center;">
+              <span style="font-size: 0.85rem; color: var(--text-secondary);">Mastered: Graphs, Dynamic Programming, Segment Trees, Heaps</span>
+              <a href="https://github.com/RiyaSingh-13" target="_blank" class="proj-link">View Solutions →</a>
+            </div>
+          </div>
+
+          <!-- CodeXtreme & Certifications Column -->
+          <div class="reveal-on-scroll delay-2">
+            <!-- CodeXtreme Card -->
+            <div class="contest-card">
+              <span class="contest-rank-badge">🏆 TOP 30 / 2,000+</span>
+              <h4 style="font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; color: #fff; margin-bottom: 0.4rem;">
+                CodeXtreme 2.0-Neo Codeathon
+              </h4>
+              <p style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent-cyan); margin-bottom: 0.75rem;">
+                May 2025 • National Competitive Programming Contest
+              </p>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.5;">
+                Ranked in the top 30 among 2,000+ engineers solving complex algorithmic challenges focusing on advanced graph traversals and tree data structures.
+              </p>
+            </div>
+
+            <!-- Certifications List -->
+            <h4 style="font-family: var(--font-display); font-size: 1.15rem; font-weight: 700; color: #fff; margin-bottom: 0.85rem;">
+              Verified Certifications
+            </h4>
+            <div class="cert-list">
+              <div class="cert-item">
+                <div>
+                  <div class="cert-title">Introduction to MongoDB</div>
+                  <div class="cert-issuer">Simplilearn SkillUP • Sep 2026</div>
+                </div>
+                <span class="tech-tag" style="color: var(--accent-emerald);">Verified</span>
+              </div>
+
+              <div class="cert-item">
+                <div>
+                  <div class="cert-title">Privacy &amp; Security in Online Social Media</div>
+                  <div class="cert-issuer">NPTEL (IIT-Based MOOC) • Oct 2025</div>
+                </div>
+                <span class="tech-tag" style="color: var(--accent-emerald);">Verified</span>
+              </div>
+
+              <div class="cert-item">
+                <div>
+                  <div class="cert-title">Summer Training Program: DSA using C++</div>
+                  <div class="cert-issuer">Basics &amp; Advanced Algorithms • Jul 2025</div>
+                </div>
+                <span class="tech-tag" style="color: var(--accent-emerald);">Verified</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         7. EDUCATION SECTION
+         ================================================================= -->
+    <section id="education">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-tag">Academic Journey</div>
+          <h2 class="section-title">Education &amp; <span class="gradient-text">Milestones</span></h2>
+          <p class="section-subtitle">
+            Solid foundations in computer science theory, systems architecture, and engineering principles.
+          </p>
+        </div>
+
+        <div class="education-grid">
+          <!-- College -->
+          <div class="edu-card reveal-on-scroll delay-1">
+            <h3 class="edu-inst">Lovely Professional University</h3>
+            <div class="edu-degree">Bachelor of Technology - Computer Science &amp; Engineering</div>
+            <div class="edu-meta-badge">CGPA: 7.92 / 10 • Aug 2023 – Present</div>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+              Phagwara, Punjab. Coursework includes Data Structures &amp; Algorithms, Object-Oriented Programming, Database Management Systems (DBMS), Operating Systems, Software Engineering, and Computer Networks.
+            </p>
+          </div>
+
+          <!-- School -->
+          <div class="edu-card reveal-on-scroll delay-2">
+            <h3 class="edu-inst">Jeevandhara Convent School</h3>
+            <div class="edu-degree">Senior Secondary &amp; High School Education</div>
+            <div class="edu-meta-badge">Intermediate: 74% • Matriculation: 85%</div>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+              Lucknow, Uttar Pradesh (Mar 2019 – May 2023). Strong mathematics and science focus, cultivating early passion for algorithmic logic, computational problem-solving, and programming.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         8. CONTACT & CONNECT HUB
+         ================================================================= -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-tag">Get in Touch</div>
+          <h2 class="section-title">Let's Build Something <span class="gradient-text">Remarkable</span></h2>
+          <p class="section-subtitle">
+            Whether you have an ambitious product idea, an opening on your engineering team, or want to discuss AI architecture — my inbox is always open.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Channels Info -->
+          <div class="contact-info-panel reveal-on-scroll delay-1">
+            
+            <!-- Email Card -->
+            <div class="contact-channel-card" onclick="copyText('riyasingh20071213@gmail.com', 'Email Address')" title="Click to Copy Email">
+              <div class="channel-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div>
+                <div class="channel-label">Email (Click to Copy)</div>
+                <div class="channel-value">riyasingh20071213@gmail.com</div>
+              </div>
+            </div>
+
+            <!-- Phone Card -->
+            <div class="contact-channel-card" onclick="copyText('+91-9151352998', 'Phone Number')" title="Click to Copy Phone">
+              <div class="channel-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div>
+                <div class="channel-label">Mobile (Click to Copy)</div>
+                <div class="channel-value">+91-9151352998</div>
+              </div>
+            </div>
+
+            <!-- LinkedIn Card -->
+            <a href="https://www.linkedin.com/in/riyasingh1213" target="_blank" class="contact-channel-card" style="text-decoration: none;">
+              <div class="channel-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </div>
+              <div>
+                <div class="channel-label">LinkedIn Profile</div>
+                <div class="channel-value">linkedin.com/in/riyasingh1213</div>
+              </div>
+            </a>
+
+            <!-- GitHub Card -->
+            <a href="https://github.com/RiyaSingh-13" target="_blank" class="contact-channel-card" style="text-decoration: none;">
+              <div class="channel-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </div>
+              <div>
+                <div class="channel-label">GitHub Repository</div>
+                <div class="channel-value">github.com/RiyaSingh-13</div>
+              </div>
+            </a>
+
+            <!-- Location -->
+            <div class="contact-channel-card" style="cursor: default;">
+              <div class="channel-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div>
+                <div class="channel-label">Locations</div>
+                <div class="channel-value">Phagwara, Punjab • Lucknow, UP, India</div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="contact-form-wrapper reveal-on-scroll delay-2">
+            <h3 style="font-family: var(--font-display); font-size: 1.45rem; font-weight: 700; color: #fff; margin-bottom: 1.5rem;">
+              Send a Direct Message
+            </h3>
+
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Your Name</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="e.g. Alex Henderson" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Email Address</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="alex@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Subject</label>
+                <input type="text" id="contact-subject" class="form-input" placeholder="Role Opportunity / Project Collab / Tech Chat">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message</label>
+                <textarea id="contact-message" class="form-textarea" placeholder="Hello Riya, I reviewed your Sentinel & Pick&Give projects..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary" style="width: 100%; padding: 0.9rem; font-size: 1rem;">
+                <span>Transmit Message</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =================================================================
+       FOOTER
+       ================================================================= -->
+  <footer style="border-top: 1px solid var(--border-subtle); padding: 3rem 0; position: relative; z-index: 2; background: rgba(5, 7, 15, 0.9);">
+    <div class="container" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; text-align: center;">
+      <div class="nav-brand" style="font-size: 1.25rem;">
+        <div class="brand-symbol" style="width: 32px; height: 32px; font-size: 0.85rem;">&lt;RS/&gt;</div>
+        <span>Riya Singh</span>
+      </div>
+      <p style="color: var(--text-muted); font-size: 0.88rem; max-width: 520px;">
+        Designed &amp; Engineered with modern semantic HTML, responsive CSS, and native JavaScript. Powered by creativity, caffeine, and clean architectures.
+      </p>
+      <div style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent-cyan);">
+        © 2026 Riya Singh • All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- =================================================================
+       MODALS & FLOATING UTILITIES
+       ================================================================= -->
+  <!-- Project Architecture Modal -->
+  <div id="project-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <span style="font-family: var(--font-mono); font-size: 0.82rem; color: var(--accent-cyan);">ARCHITECTURE INSPECTION</span>
+        <button id="modal-close-btn" class="modal-close-btn" aria-label="Close Modal">&times;</button>
+      </div>
+      <div id="modal-body-content" class="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Scroll-to-Top Floating Button -->
+  <button class="scroll-top-btn" aria-label="Back to Top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="js/sound.js"></script>
+  <script src="js/canvas.js"></script>
+  <script src="js/terminal.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
